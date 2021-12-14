@@ -48,6 +48,20 @@ Within each event payload you will find 3 important indicies:
 
 **FieldMapping:** Key-value object where key is the respective field in Mailchimp & value is the value of this field to either update or create with.
 
+## ESP capabilities
+All ESPs have a set of capabilities that will determine what the processing of sending one over will look like. The 3 capabilities of a ESP is as follows:
+
+1. search
+2. update
+3. create
+
+In this case mailchimp supports both searching out existing records, updating existing records and creating new records. So the process of the ESP would look something like:
+
+1. Search existing user out to see if they already exists.
+2. If payload says to update existing users and user already exist - update it.
+3. If payload says not to update existing users and user already exists - do nothing.
+4. If user does not exists - attempt to create it.
+
 ## On completion
 When you're finished and wish to send the project to your contact in Leadfamly. Fell free to either zip it and send it, or upload to Github and share a link to it.
 
