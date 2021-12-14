@@ -42,7 +42,7 @@ Within each event payload you will find 3 important indicies:
 
 **Configuration:**
  1) **ApiKey:** Mailchimp API key.
- 2) **DoupleOptIn:** Whether or not double opt-in is enabled.
+ 2) **DoubleOptIn:** Whether or not double opt-in is enabled.
  3) **UpdateIfExists:** Whether or not it should update if a record exists.
  4) **ListId:** Mailchimp list id to send to.
 
