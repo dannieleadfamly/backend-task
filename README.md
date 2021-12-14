@@ -39,6 +39,7 @@ Within each event payload you will find 3 important indicies:
 3. FieldMapping
 
 **Target:** ESP that the event is targeting.
+
 **Configuration:**
  1) **ApiKey:** Mailchimp API key.
  2) **DoupleOptIn:** Whether or not double opt-in is enabled.
