@@ -1,10 +1,12 @@
 # Leadfamly backend test case
 This repository contains a test case with the main purpose of evaluating technical capabilities that is backend related. A sample docker, docker-compose & NodeJS setup is already configured and ready to go. This does however not mean that you cannot swap NodeJS out with other languages or make your own customization to the repository as you see fit.
 
+The maximum amount of hours allowed to spend on the task is 5 hours. Please try and stay within this limit. **We do not expect you to finish all aspects of the task.**
+
 ## Prerequisites
 1. Docker & Docker Compose installed.
 2. Mailchimp account (they're free to create).
-3. AWS CLI (for publishing samples).
+3. AWS CLI tool installed (for publishing samples, an AWS account is NOT required).
 
 ## Introduction
 To set the scene. You're tasked with creating a microservice that will send users over to an ESP (Email service provider). Communication with this microservice will happen through AWS EventBridge & in the end, end up in an AWS SQS queue that you will have to read from.
