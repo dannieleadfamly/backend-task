@@ -1,0 +1,12 @@
+{
+  "name": "backend-task",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/dannieleadfamly/backend-task.git",
+  "author": "Dannie Hansen <dannie@leadfamly.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.43.0",
+    "dotenv": "^10.0.0"
+  }
+}

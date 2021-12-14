@@ -1,0 +1,27 @@
+version: "3.5"
+
+services:
+  backend-test-sqs:
+    image: roribio16/alpine-sqs
+    ports:
+      - "9324:9324"
+      - "9325:9325"
+    volumes:
+      - ./config/elasticmq.conf:/opt/config/elasticmq.conf
+    networks:
+      - backend-test
+  backend-test-worker:
+    build: .
+    ports:
+      - "8001:80"
+    networks:
+      - backend-test
+    environment:
+      - "SQS_ENDPOINT=${SQS_ENDPOINT}"
+      - "SQS_REGION=${SQS_REGION}"
+      - "SQS_QUEUE_URL=${SQS_QUEUE_URL}"
+      - "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}"
+      - "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}"
+networks:
+  backend-test:
+    driver: bridge

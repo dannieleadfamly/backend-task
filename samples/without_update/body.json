@@ -1,0 +1,16 @@
+{
+    "Event": "campaign-esp-send",
+    "Payload": {
+        "Target": "mailchimp",
+        "Configuration": {
+            "ApiKey": "some-api-key",
+            "DoubleOptIn": true,
+            "UpdateIfExists": false,
+            "ListId": "908e87634f"
+        },
+        "FieldMapping": {
+            "FNAME": "Dannie",
+            "EMAIL": "dannie@leadfamly.com"
+        }
+    }
+}
