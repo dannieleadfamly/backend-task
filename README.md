@@ -3,6 +3,8 @@ This repository contains a test case with the main purpose of evaluating technic
 
 The maximum amount of hours allowed to spend on the task is 5 hours. Please try and stay within this limit. **We do not expect you to finish all aspects of the task.**
 
+We kindly ask that if there are elements that you don't get to finish, that you include a short summary of which elements weren't finished, why you prioritized as you did, and if you did have additional time, how you would have solved the remaining tasks.
+
 ## Prerequisites
 1. Docker & Docker Compose installed.
 2. Mailchimp account (they're free to create).
